@@ -24,10 +24,29 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent numbersIntent = new Intent(MainActivity.this, RestaurantsActivity.class);
+                Intent restaurantsIntent = new Intent(MainActivity.this, RestaurantsActivity.class);
 
                 // Start the new activity
-                startActivity(numbersIntent);
+                startActivity(restaurantsIntent);
+            }
+        });
+
+        // Set the content of the activity to use the activity_main.xml layout file
+        setContentView(R.layout.activity_main);
+
+        // Find the View that shows the hotels category
+        TextView hotels = (TextView) findViewById(R.id.hotels);
+
+        // Set a click listener on that View
+        hotels.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent hotelsIntent = new Intent(MainActivity.this, HotelsActivity.class);
+
+                // Start the new activity
+                startActivity(hotelsIntent);
             }
         });
     }
