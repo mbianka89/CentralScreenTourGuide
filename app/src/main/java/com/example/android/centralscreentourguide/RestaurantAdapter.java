@@ -9,8 +9,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import static com.example.android.centralscreentourguide.R.id.restaurants;
-
 /**
  * Created by Matyas Bianka on 17/06/2017.
  */
@@ -27,7 +25,7 @@ import static com.example.android.centralscreentourguide.R.id.restaurants;
          * The context is used to inflate the layout file, and the list is the data we want
          * to populate into the lists.
          */
-        public RestaurantAdapter(Activity context, ArrayList<Restaurant> words) {
+        public RestaurantAdapter(Activity context, ArrayList<Restaurant> restaurants) {
             // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
             // the second argument is used when the ArrayAdapter is populating a single TextView.
             // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
@@ -64,10 +62,9 @@ import static com.example.android.centralscreentourguide.R.id.restaurants;
 
             // Find the TextView in the list_item.xml layout with the ID
             TextView restaurantTelTextView = (TextView) listItemView.findViewById(R.id.restaurant_tel_text_view);
-            // Get the version number from the current Word object and
-            // set this text on the number TextView
+            // Get the telephone number from the current Restaurant object and
+            // set this text on the telephone number TextView
             restaurantTelTextView.setText(currentrestaurant.getmRestaurantTel());
-
 
             // Return the whole list item layout (containing 2 TextViews )
             // so that it can be shown in the ListView

@@ -33,5 +33,4 @@ public class Restaurant {
     public String getmRestaurantTel() {
         return mRestaurantTel;
     }
-
 }
