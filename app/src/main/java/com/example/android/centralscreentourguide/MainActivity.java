@@ -31,9 +31,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Set the content of the activity to use the activity_main.xml layout file
-        setContentView(R.layout.activity_main);
-
         // Find the View that shows the hotels category
         TextView hotels = (TextView) findViewById(R.id.hotels);
 
@@ -47,6 +44,37 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start the new activity
                 startActivity(hotelsIntent);
+            }
+        });
+
+        // Find the View that shows the hotels category
+        TextView spas = (TextView) findViewById(R.id.spas);
+
+        // Set a click listener on that View
+        spas.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent spasIntent = new Intent(MainActivity.this, SpasActivity.class);
+
+                // Start the new activity
+                startActivity(spasIntent);
+            }
+        });
+        // Find the View that shows the hotels category
+        TextView sights = (TextView) findViewById(R.id.sights);
+
+        // Set a click listener on that View
+        sights.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent sightsIntent = new Intent(MainActivity.this, SightsActivity.class);
+
+                // Start the new activity
+                startActivity(sightsIntent);
             }
         });
     }
