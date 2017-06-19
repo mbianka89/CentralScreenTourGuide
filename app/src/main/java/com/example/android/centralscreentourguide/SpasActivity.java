@@ -15,10 +15,10 @@ public class SpasActivity extends AppCompatActivity {
 
         // Create a list of spas
         ArrayList<Spa> spas = new ArrayList<Spa>();
-        spas.add(new Spa("Gellért Thermal Bath", "Budapest, Kelenhegyi út 4, 1118"));
-        spas.add(new Spa("Kiraly Medicinal Bath", "Budapest, Fő u. 84, 1027"));
-        spas.add(new Spa("Széchenyi Thermal Bath", "Budapest, Állatkerti krt. 9-11, 1146"));
-        spas.add(new Spa("Rudas Baths", "Budapest, Döbrentei tér 9, 1013"));
+        spas.add(new Spa ((getString(R.string.spa_name1)),getString( R.string.spa_address1)));
+        spas.add(new Spa ((getString(R.string.spa_name2)),getString( R.string.spa_address2)));
+        spas.add(new Spa ((getString(R.string.spa_name3)),getString( R.string.spa_address3)));
+        spas.add(new Spa ((getString(R.string.spa_name4)),getString( R.string.spa_address4)));
 
         // Create an {@link SpaAdapter}, whose data source is a list of {@link Spa}s. The
         // adapter knows how to create list items for each item in the list.

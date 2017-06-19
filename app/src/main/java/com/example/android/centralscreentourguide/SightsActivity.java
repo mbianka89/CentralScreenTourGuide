@@ -15,10 +15,10 @@ public class SightsActivity extends AppCompatActivity {
 
         // Create an ArrayList of Sight objects
         ArrayList<Sight> sights = new ArrayList<Sight>();
-        sights.add(new Sight("Parlaiment", "Budapest, Kossuth Lajos tér 1-3, 1055", R.drawable.parlaiment));
-        sights.add(new Sight("National Museum", "Budapest, Múzeum krt. 14-16, 1088", R.drawable.national_museum));
-        sights.add(new Sight("St Stephen`s Basilica", "Budapest, Szent István tér 1, 1051", R.drawable.st_stephans_basilica));
-        sights.add(new Sight("The Chain Bridge", "Budapest Széchenyi Lánchíd, 1051", R.drawable.parlaiment));
+        sights.add(new Sight ((getString(R.string.sight_name1)),(getString( R.string.sight_address1)), R.drawable.parlaiment));
+        sights.add(new Sight ((getString(R.string.sight_name2)),(getString( R.string.sight_address2)), R.drawable.national_museum));
+        sights.add(new Sight ((getString(R.string.sight_name3)),(getString( R.string.sight_address3)), R.drawable.st_stephans_basilica));
+        sights.add(new Sight ((getString(R.string.sight_name4)),(getString( R.string.sight_address4)), R.drawable.chain_bridge));
 
         // Create an {@link SightAdapter}, whose data source is a list of
         // {@link Sight}s. The adapter knows how to create list item views for each item

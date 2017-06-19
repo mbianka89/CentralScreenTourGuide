@@ -15,10 +15,10 @@ public class RestaurantsActivity extends AppCompatActivity {
 
         // Create a list of restaurants
         ArrayList<Restaurant> restaurants = new ArrayList<Restaurant>();
-        restaurants.add(new Restaurant("Trofea Grill Restaurant", "+36 1 251 6377"));
-        restaurants.add(new Restaurant("Árnyas Restaurant", "+36 1 212 5681"));
-        restaurants.add(new Restaurant("Sir Lancelot Restaurant", "+36 1 302 4456"));
-        restaurants.add(new Restaurant("Golden Caviar Restaurant", "+36 1 201 6737"));
+        restaurants.add(new Restaurant((getString(R.string.restaurant_name1)),getString( R.string.restaurant_tel1)));
+        restaurants.add(new Restaurant((getString(R.string.restaurant_name2)),getString( R.string.restaurant_tel2)));
+        restaurants.add(new Restaurant((getString(R.string.restaurant_name3)),getString( R.string.restaurant_tel3)));
+        restaurants.add(new Restaurant((getString(R.string.restaurant_name4)),getString( R.string.restaurant_tel4)));
 
         // Create an {@link RestaurantAdapter}, whose data source is a list of {@link Restaurant}s. The
         // adapter knows how to create list items for each item in the list.

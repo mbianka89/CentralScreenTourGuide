@@ -15,10 +15,10 @@ public class HotelsActivity extends AppCompatActivity {
 
         // Create a list of hotels
         ArrayList<Hotel> hotels = new ArrayList<Hotel>();
-        hotels.add(new Hotel("Kempinski Hotel Corvinus", "+36 1 429 3777"));
-        hotels.add(new Hotel("Corinthia Hotel ", "+36 1 479 4000"));
-        hotels.add(new Hotel("Bohem Art Hotel", "+36 1 327 9020"));
-        hotels.add(new Hotel("Prestige Hotel", "+36 1 920 1000"));
+        hotels.add(new Hotel((getString(R.string.hotel_name1)),getString( R.string.hotel_tel1)));
+        hotels.add(new Hotel((getString(R.string.hotel_name2)),getString( R.string.hotel_tel2)));
+        hotels.add(new Hotel((getString(R.string.hotel_name3)),getString( R.string.hotel_tel3)));
+        hotels.add(new Hotel((getString(R.string.hotel_name4)),getString( R.string.hotel_tel4)));
 
         // Create an {@link HotelAdapter}, whose data source is a list of {@link Hotel}s. The
         // adapter knows how to create list items for each item in the list.
