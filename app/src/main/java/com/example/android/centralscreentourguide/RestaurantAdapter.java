@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 
     /*
-    * {@link RestaurantAdapter} is an {@link ArrayAdapter} that can provide the layout for each list
+    * {@link RestaurantAdapter} is an {@li  nk ArrayAdapter} that can provide the layout for each list
     * based on a data source, which is a list of {@link Restaurant} objects.
     * */
     public class RestaurantAdapter extends ArrayAdapter<Restaurant> {

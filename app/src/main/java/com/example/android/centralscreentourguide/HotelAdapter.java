@@ -48,7 +48,7 @@ public class HotelAdapter extends ArrayAdapter<Hotel> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent, false);
+                    R.layout.list_item_hotels, parent, false);
         }
 
         // Get the {@link Hotel} object located at this position in the list
