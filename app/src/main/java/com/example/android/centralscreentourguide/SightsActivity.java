@@ -28,5 +28,5 @@ public class SightsActivity extends AppCompatActivity {
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) findViewById(R.id.list_sights);
         listView.setAdapter(sightAdapter);
-
-    }}
+    }
+}

@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_spas"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:id="@+id/list_item_spas"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/spa_name_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Kempinski Hotel Corvinus" />
+        tools:text="@string/spa1" />
 
     <TextView
         android:id="@+id/spa_address_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="+36 1 429 3777" />
+        tools:text="@string/spa2" />
 
 </LinearLayout>

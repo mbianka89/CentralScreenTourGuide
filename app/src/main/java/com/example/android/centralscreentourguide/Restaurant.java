@@ -13,7 +13,7 @@ public class Restaurant {
      * Create a new Restaurant object.
      *
      * @param restaurantName is the name of the corresponding restaurant
-     * @param restaurantTel is the tel# of the corresponding restaurant
+     * @param restaurantTel  is the tel# of the corresponding restaurant
      */
     public Restaurant(String restaurantName, String restaurantTel) {
         mRestaurantName = restaurantName;
